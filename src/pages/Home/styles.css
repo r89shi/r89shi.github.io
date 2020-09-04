@@ -1,0 +1,102 @@
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 80px;
+    padding: 0px 70px 0px 70px;
+}
+
+.personal-text {
+
+}
+
+.personal-interests {
+    font: 500 16px 'poppins';
+    color: #aaaaaa;
+}
+
+.personal-description {
+    margin-top: 36px;
+    font: 400 14px 'poppins';
+    color: #d5d5d5;
+}
+
+.personal-photo {
+    margin-left: 50px;
+}
+
+
+.skills {
+    margin-top: 70px;
+
+    width: 100%;
+    margin-top: 80px;
+}
+.skills p {
+    font: 400 14px 'poppins';
+    color: #D5D5D5;
+    text-align: center;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin-top: 60px;
+
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills ul li {
+    display: inline-table;
+    text-align: center;
+    
+    min-width: 20%;
+    font: 500 16 'poppins';
+    color: #F5F5F5;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.skills ul li span {
+    font: 500 30px 'poppins';
+    line-height: 1ch;
+    color: #F5F5F5;
+}
+
+
+.projects {
+    margin-top: 70px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: 33.3%;
+    text-align: center;
+    padding: 10px;
+    min-height: 600px;
+}
+
+.project-item p strong {
+    color: #E11A3F;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #F5F5F5;
+    transition: 0.5s;;
+}
+.project-item a:hover {
+    color: #aaaaaa;
+}
