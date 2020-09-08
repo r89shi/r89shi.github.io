@@ -33,3 +33,18 @@
 .menu ul li a:hover {
     color: #aaaaaa;
 }
+
+@media screen and (max-width: 1200px) {
+    .menu p {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .menu ul li {
+        font: 500 13px 'poppins';
+        color: #d5d5d5;
+        display: inline;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+}

@@ -27,6 +27,26 @@
     margin-left: 50px;
 }
 
+.personal-photo img {
+    max-width: 353px;
+}
+
+@media screen and (max-width: 1200px) {
+    .personal-photo {
+        margin-left: 0px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .personal-photo img {
+        max-width: 200px;
+    }
+    
+    .personal-info {
+        display: block;
+    }
+}
+
 
 .skills {
     margin-top: 70px;
@@ -99,4 +119,13 @@
 }
 .project-item a:hover {
     color: #aaaaaa;
+}
+
+@media screen and (max-width: 1200px) {
+    .project-list {
+        display: block;
+    }
+    .project-item {
+        width: 100%;
+    }
 }
