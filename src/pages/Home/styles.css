@@ -32,6 +32,15 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .personal-info {
+        display: block;
+        margin-top: 80px;
+        padding: 0px 5px 0px 5px;
+        width: 100%;
+    }
+    .personal-text {
+    }
+
     .personal-photo {
         margin-left: 0px;
         margin-top: 50px;
@@ -50,7 +59,7 @@
 
 .skills {
     margin-top: 70px;
-
+    
     width: 100%;
     margin-top: 80px;
 }
@@ -87,6 +96,19 @@
     color: #F5F5F5;
 }
 
+@media screen and (max-width: 1200px) {
+    .skills ul li {
+        display: inline-table;
+        text-align: center;
+        
+        min-width: 25%;
+        font: 500 16 'poppins';
+        color: #F5F5F5;
+    
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 
 .projects {
     margin-top: 70px;
@@ -126,6 +148,12 @@
         display: block;
     }
     .project-item {
+        padding: 0px;
         width: 100%;
+    }
+
+    .project-item img {
+        width: 100%;
+        padding: 5px;
     }
 }
