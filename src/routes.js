@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Home from './pages/Home'
+import Index from './views/index'
 
 export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Home}></Route>
+                <Route path="/" exact component={Index}></Route>
             </Switch>
         </BrowserRouter>
     )

@@ -1,0 +1,7 @@
+.container-projects {
+  padding-top: 25vh;
+}
+
+.projects-card {
+  background-color: var(--color3);
+}
