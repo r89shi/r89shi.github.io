@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./assets/vendor/nucleo/css/nucleo.css";
+import "./assets/css/argon-design-system-react.css";
 
 import App from './App';
 

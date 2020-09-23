@@ -10,77 +10,136 @@ import {
   Container,
   Col,
   Row,
-  CardColumns,
   Card,
-  CardImg,
   CardBody,
-  CardTitle,
-  CardText
+  Badge,
+  Button,
+  CardImg
 } from 'reactstrap'
 
 export default function Projects() {
   return (
-    <Container className="container-projects">
-      <Row>
-        <Col md="12"><h1>PROJECTS</h1></Col>
-      </Row>
+    <section className="section section-lg pt-lg-0">
+      <Container>
+        <Row>
+          <Col md="12"><h1>PROJECTS</h1></Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col lg="12">
+            <Row className="row-grid">
+              <Col lg="4">
+                <Card className="card-lift--hover shadow border-0">
+                  <CardBody className="py-5">
+                    <CardImg top width="100%" src={huelma} alt="Card image cap" />
+                    
+                    <h6 className="text-primary text-uppercase">
+                      Huelma
+                    </h6>
+                    <p className="description mt-3">
+                      Projeto do portal da emprea Huelma que presta servi&ccedil;os Florestais.
+                    </p>
+                    <p className="description mt-3">Backend</p>
+                    <div>
+                      <Badge color="primary" pill className="mr-1">PHP</Badge>
+                    </div>
+                    <p className="description mt-3">Frontend</p>
+                    <div>
+                      <Badge color="primary" pill className="mr-1">HTML</Badge>
+                      <Badge color="primary" pill className="mr-1">Javascript</Badge>
+                      <Badge color="primary" pill className="mr-1">CSS</Badge>
+                      <Badge color="primary" pill className="mr-1">BootStrap</Badge>
+                    </div>
+                    <Button className="mt-4" color="primary" href="http://huelma.com.br/" >
+                      Acesse
+                    </Button>
+                  </CardBody>
+                </Card>
+              </Col>
 
-      <Row>
-        <Col>
-          <CardColumns>
-            <Card className="projects-card">
-              <CardImg top width="100%" src={huelma} alt="Card image cap" />
-              <CardBody>
-                <CardTitle>Huelma</CardTitle>
-                <CardText>
-                  <strong>Backend:</strong> PHP<br />
-                  <strong>Frontend:</strong> HTML, Javascript, CSS, BootStrap<br /><br />
-                  Projeto do portal da emprea Huelma que presta servi&ccedil;os Florestais.<br /><br />
-                  <a href="http://huelma.com.br/" target="_blank" rel="noopener noreferrer">Acesse: huelma.com.br</a>
-                </CardText>
-              </CardBody>
-            </Card>
+              <Col lg="4">
+                <Card className="card-lift--hover shadow border-0">
+                  <CardBody className="py-5">
+                    <CardImg top width="100%" src={thankaparamedic} alt="Card image cap" />
+                    <h6 className="text-success text-uppercase">
+                      Thank a Paramedic
+                    </h6>
+                    <p className="description mt-3">
+                      Projeto para agradecer aos param&eacute;dicos da prov&iacute;ncia de Alberta pelo trabalho.
+                    </p>
+                    <p className="description mt-3">Backend</p>
+                    <div>
+                      <Badge color="success" pill className="mr-1">PHP</Badge>
+                    </div>
 
-            <Card className="projects-card">
-              <CardImg top width="100%" src={thankaparamedic} alt="Card image cap" />
-              <CardBody>
-                <CardTitle>Thank a Paramedic</CardTitle>
-                <CardText>
-                  <strong>Backend:</strong> PHP<br />
-                  Projeto para agradecer aos param&eacute;dicos da prov&iacute;ncia de Alberta pelo trabalho.<br /><br />
-                  <a href="https://www.thankaparamedic.com/" target="_blank" rel="noopener noreferrer">Acesse: www.thankaparamedic.com</a>
-                </CardText>
-              </CardBody>
-            </Card>
+                    <Button className="mt-4" color="success" href="https://www.thankaparamedic.com/" >
+                      Acesse
+                    </Button>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col lg="4">
+                <Card className="card-lift--hover shadow border-0">
+                  <CardBody className="py-5">
+                    <CardImg top width="100%" src={obra24horas} alt="Card image cap" />
+                    <h6 className="text-warning text-uppercase">
+                      Obra24horas
+                    </h6>
+                    <p className="description mt-3">
+                      Projeto de reformula&ccedil;&atilde;o do portal da empresa obra24horas.
+                    </p>
 
-            <Card className="projects-card">
-              <CardImg top width="100%" src={obra24horas} alt="Card image cap" />
-              <CardBody>
-                <CardTitle>Obra24horas</CardTitle>
-                <CardText>
-                  <strong>Backend:</strong> Cold Fusion<br />
-                  <strong>Frontend:</strong> HTML, Javascript, CSS, BootStrap<br /><br />
-                  Projeto de reformula&ccedil;&atilde;o do portal da empresa obra24horas.<br /><br />
-                  <a href="https://www.obra24horas.com.br/" target="_blank" rel="noopener noreferrer">Acesse: www.obra24horas.com.br</a>
-                </CardText>
-              </CardBody>
-            </Card>
+                    <p className="description mt-3">Backend</p>
+                    <div>
+                      <Badge color="warning" pill className="mr-1">Cold Fusion</Badge>
+                    </div>
 
-            <Card className="projects-card">
-              <CardImg top width="100%" src={eficaz} alt="Card image cap" />
-              <CardBody>
-                <CardTitle>Eficaz</CardTitle>
-                <CardText>
-                  <strong>Backend:</strong> PHP<br />
-                  <strong>Frontend:</strong> HTML, Javascript, CSS, BootStrap<br /><br />
-                  Portal para monitoramento de corrente el&eacute;trica dos equipamentos.<br /><br />
-                </CardText>
-              </CardBody>
-            </Card>
-            
-          </CardColumns>
-        </Col>
-      </Row>
-    </Container>
+                    <p className="description mt-3">Frontend</p>
+                    <div>
+                      <Badge color="warning" pill className="mr-1">HTML</Badge>
+                      <Badge color="warning" pill className="mr-1">Javascript</Badge>
+                      <Badge color="warning" pill className="mr-1">CSS</Badge>
+                      <Badge color="warning" pill className="mr-1">BootStrap</Badge>
+                    </div>
+
+                    <Button className="mt-4" color="warning" href="https://www.obra24horas.com.br" >
+                      Acesse
+                    </Button>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+
+            <Row className="row-grid">
+              <Col lg="4">
+                <Card className="card-lift--hover shadow border-0">
+                  <CardBody className="py-5">
+                    <CardImg top width="100%" src={eficaz} alt="Card image cap" />
+                    <h6 className="text-primary text-uppercase">
+                      Eficaz
+                    </h6>
+                    <p className="description mt-3">
+                      Portal para monitoramento de corrente el&eacute;trica dos equipamentos.
+                    </p>
+
+                    <p className="description mt-3">Backend</p>
+                    <div>
+                      <Badge color="primary" pill className="mr-1">PHP</Badge>
+                    </div>
+                    <p className="description mt-3">Frontend</p>
+                    <div>
+                      <Badge color="primary" pill className="mr-1">HTML</Badge>
+                      <Badge color="primary" pill className="mr-1">Javascript</Badge>
+                      <Badge color="primary" pill className="mr-1">CSS</Badge>
+                      <Badge color="primary" pill className="mr-1">BootStrap</Badge>
+                    </div>
+
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   )
 }

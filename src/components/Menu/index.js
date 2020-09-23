@@ -17,7 +17,8 @@ import {
   NavLink,
   Nav,
   Container,
-  UncontrolledTooltip
+  Row,
+  Col
 } from "reactstrap";
 
 
@@ -39,11 +40,11 @@ export default class Menu extends Component {
   }
 
   changeColor = () => {
-    if (document.documentElement.scrollTop > 99 || document.body.scrollTop > 99) {
+    if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
       this.setState({
-        color: "bg-info"
+        color: "bg-default"
       })
-    } else if (document.documentElement.scrollTop < 100 || document.body.scrollTop < 100) {
+    } else if (document.documentElement.scrollTop < 51 || document.body.scrollTop < 51) {
       this.setState({
         color: "navbar-transparent"
       })
@@ -76,12 +77,8 @@ export default class Menu extends Component {
             <NavbarBrand to="/" id="navbar-brand" tag={Link}>
               <span>RLUCCAF • </span>Portifolio
             </NavbarBrand>
-
-            <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              Designed and Coded by Roberto Falc&atilde;o
-            </UncontrolledTooltip>
-
-            <button aria-expanded={this.state.collapseOpen} className="navbar-toggler navbar-toggler" onClick={this.toggleCollapse} >
+            
+            <button aria-expanded={this.state.collapseOpen} className="navbar-toggler" onClick={this.toggleCollapse} >
               <FaBars />
             </button>
           </div>
@@ -93,22 +90,45 @@ export default class Menu extends Component {
             onExiting={this.onCollapseExiting}
             onExited={this.onCollapseExited} >
 
+            <div className="navbar-collapse-header">
+              <Row>
+                <Col className="collapse-brand" xs="6">
+                  <h6>RLUCCAF</h6>
+                </Col>
+                <Col className="collapse-close" xs="6">
+                  <button className="navbar-toggler" id="navbar_global" onClick={this.toggleCollapse}>
+                    <span />
+                    <span />
+                  </button>
+                </Col>
+              </Row>
+            </div>
+
             <Nav navbar>
               <NavItem>
                 <NavLink href="https://www.linkedin.com/in/rluccaf/?locale=en_US">
-                <FaLinkedin size={20} />
+                <FaLinkedin size={18} />
+                <span className="nav-link-inner--text d-lg-none ml-2">
+                  Linkedin
+                </span>
                 </NavLink>
               </NavItem>
 
               <NavItem>
                 <NavLink href="https://www.instagram.com/roberto.shimokawa">
-                  <FaInstagram size={20} />
+                  <FaInstagram size={18} />
+                  <span className="nav-link-inner--text d-lg-none ml-2">
+                    Instagram
+                </span>
                 </NavLink>
               </NavItem>
               
               <NavItem>
                 <NavLink href="https://github.com/rluccaf">
-                  <FaGithub size={20} />
+                  <FaGithub size={18} />
+                  <span className="nav-link-inner--text d-lg-none ml-2">
+                    Github
+                  </span>
                 </NavLink>
               </NavItem>
 

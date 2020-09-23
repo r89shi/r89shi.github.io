@@ -1,20 +1,3 @@
-.container-skills {
-  padding-top: 20vh;
-}
-
-.container-skills .row{
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.container-skills span{
-  font: 400 33px "Poppins";
-}
-
-.card-skills {
-  background-color: var(--color3);
-  border-color: var(--color3);
-
-  margin-top: 10px;
-  margin-bottom: 10px;
+.skill-logo {
+  font: 400 25px "Poppins";
 }

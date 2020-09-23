@@ -11,8 +11,7 @@
 
 body {
   font: 400 14px 'poppins';
-  background-color: var(--color2);
-  color: var(--color6);
+  background-color: var(--color5);
 }
 
 .nav-link {
@@ -28,16 +27,8 @@ body {
   transition: 0.5s;
 }
 
-.navbar-nav li {
-  padding: 0 10px;
-}
-
 .navbar.navbar-transparent {
   padding-top: 25px;
-}
-
-.bg-info {
-  background-color: var(--color4) !important;
 }
 
 .navbar-brand {
@@ -47,10 +38,6 @@ body {
 
 .navbar-brand:hover {
   color: var(--color7);
-}
-
-h1 {
-  font: 400 32px "Poppins";
 }
 
 .navbar-translate {

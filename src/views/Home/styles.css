@@ -1,5 +1,7 @@
 .container-home {
     padding-top: 25vh;
+    background: linear-gradient(150deg,#7795f8 15%,#6772e5 70%,#555abf 94%);
+    min-height: 100vh;
 }
 
 .card-home {
@@ -15,4 +17,9 @@
 .home-description {
     font: 400 14px "Poppins";
     color: #ffffffcc;
+}
+
+.profile-page {
+    margin-top: 25vh !important;
+    padding-bottom: 25vh !important;
 }
