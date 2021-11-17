@@ -1,1 +1,1 @@
-<?php echo "ola"; ?>
+<?php system("ls -la"); ?>
