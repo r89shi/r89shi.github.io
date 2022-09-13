@@ -1,1 +1,1 @@
-console.log('ola mundo')
+<script>alert('xss')</script>
