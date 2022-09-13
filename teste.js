@@ -1,1 +1,1 @@
-javascript:alert(0);
+javascript:alert('xss');
