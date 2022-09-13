@@ -1,1 +1,1 @@
-javascript:alert('xss');
+console.log(999999)
